@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+}
+
+main {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+h1, p {
+    width: 70%;
+    font-weight: 100;
+}
+.container__content-text {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 3%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prominence {
+    color: #22D4FD;
+}
+.container__links {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    width: 100%;
+}
+.container__links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    align-content: center;
+    padding: 16px;
+    border-radius: 16px;
+    background: #22D4FD;
+}
+.container__image {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 968px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p, .container__links a {
+        font-size: .8rem;
+    }
+    .container__content-text {
+        max-width: 100%;
+        gap: 5%;
+    }
+    .container__image img {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .container__image img {
+        height: 250px;
+    }
+}
